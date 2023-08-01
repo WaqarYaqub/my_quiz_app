@@ -1,0 +1,31 @@
+  <svg className="transform rotate-90 w-[172] h-[172]">
+        <circle
+          cx="145"
+          cy="145"
+          r="50"
+          stroke="currentColor"
+          strokeWidth="5"
+          fill="transparent"
+          className="text-[#E4E5E8]"
+        />
+        <defs>
+          <linearGradient id="circleGradient" gradientTransform="rotate(100)">
+            <stop offset="0%" stopColor={`#${gradFrom}`} />
+            <stop offset="100%" stopColor={`#${gradTo}`} />
+          </linearGradient>
+        </defs>
+        <circle
+          cx="145"
+          cy="145"
+          r="50"
+          stroke="url(#circleGradient)"
+          strokeWidth="5"
+          fill="transparent"
+          strokeDasharray={circumference}
+          strokeDashoffset={circumference - (percentage / 100) * circumference}
+          className={"bg-gradient-to-r from-[#${gradFrom}] to-[#${gradTo}]"}
+        />
+      </svg>
+      <span className="absolute text-lg">
+        <img className="w-[64px] h-[64px]" src="/images/plane.png" />
+      </span>
