@@ -1,32 +1,9 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const ProgressBar = ({ percentage }) => {
-  const [gradFrom, setGradFrom] = useState("DE0606");
-  const [gradTo, setGradTo] = useState("FF5F5F");
-  const [progressStatus, setStatus] = useState("");
-
-  // useEffect(() => {
-  //   if (percentage >= 0 && percentage <= 33) {
-  //     setGradFrom("#DE0606");
-  //     setGradTo("#FF5F5F");
-  //     setStatus("Novice");
-  //   }
-  //   if (percentage > 33 && percentage <= 66) {
-  //     setGradFrom("#F38E30");
-  //     setGradTo("#FFD12E");
-  //     setStatus("Intermediete");
-  //   }
-  //   if (percentage > 66 && percentage <= 100) {
-  //     setGradFrom("#28DE87");
-  //     setGradTo("#049CCC");
-  //     setStatus("Expert");
-  //   }
-  // }, []);
-
   return (
-    <div className="grid grid-cols-4 gap-x-[12px]">
-      <div className="col-span-3 relative w-full h-[10px] bg-gray-300 rounded-lg">
+    <div className="grid grid-cols-3 gap-x-[12px] flex justify-center items-center">
+      <div className="col-span-2 relative w-full h-[10px] bg-gray-300 rounded-lg">
         <div
           className={`absolute top-0 left-0 w-[${percentage}%] h-full bg-gradient-to-r ${
             percentage <= 33
@@ -40,7 +17,7 @@ const ProgressBar = ({ percentage }) => {
           style={{ width: percentage + "%" }}
         ></div>
       </div>
-      <div>
+      <div className="col-span-1">
         <p className="text-[#62666E] text-[14px] font-rubik text-right">
           {percentage <= 33
             ? "Novice"

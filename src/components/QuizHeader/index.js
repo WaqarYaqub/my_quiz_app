@@ -5,8 +5,8 @@ const QuizHeader = ({ topic, task }) => {
   const router = useRouter();
 
   return (
-    <>
-      <header className="h-[78px] text-center flex justify-between items-center mx-auto max-w-screen-sm md:max-w-screen-xl">
+    <div className="backdrop-blur backdrop-blur-20 sticky top-0">
+      <header className="px-[10px] h-[78px] text-center flex justify-between items-center mx-auto max-w-screen-sm md:max-w-screen-xl">
         <div>
           <img
             onClick={() => router.back()}
@@ -24,7 +24,7 @@ const QuizHeader = ({ topic, task }) => {
         <p></p>
       </header>
       <hr className="bg-[#E4E5E8]" />
-    </>
+    </div>
   );
 };
 
