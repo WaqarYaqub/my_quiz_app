@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import TASKS from "@/data/task";
 import QuizHeader from "@/components/Quiz/QuizHeader";
+import { getLevel } from "@/utils";
 
 const QuizCompleted = ({ result, taskId }) => {
   const [report, setReport] = useState({ total: 0, correct: 0, wrong: 0 });
@@ -19,7 +20,7 @@ const QuizCompleted = ({ result, taskId }) => {
   return (
     <>
       <QuizHeader topic={currentTask?.topic?.title} task={currentTask?.name} />
-      <div className="h-[80vh] mx-auto max-w-screen-sm md:max-w-screen-lg">
+      <div className="h-[100vh] md:h-[90vh] mx-auto max-w-screen-sm md:max-w-screen-lg">
         <div className="h-full grid-cols-1 flex flex-col justify-center items-center">
           <div className="mb-[60px]">
             <p className="text-[#16191F] text-center text-[24px] font-rubik font-bold">
