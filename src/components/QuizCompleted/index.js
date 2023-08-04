@@ -28,8 +28,17 @@ const QuizCompleted = ({ result, taskId }) => {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center mb-[60px]">
-            <div>
-              <img src="/images/chart.svg" />
+            <div className="relative">
+              <div className="absolute top-14 -right-5">
+                <img src="/icons/emoji.svg" />
+              </div>
+              <img src="/chart.png" />
+
+              <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4">
+                <p className="text-[#16191F] text-center text-[40px] font-rubik font-bold">
+                  {`${(report?.correct / report?.total) * 100} %`}
+                </p>
+              </div>
             </div>
             <p className="text-[#484C54] text-center px-4 text-[16px] font-rubik font-normal">
               {"Congratulation! You become an Expert"}
@@ -44,7 +53,7 @@ const QuizCompleted = ({ result, taskId }) => {
                 {report?.total}
               </p>
             </div>
-            <div className="flex md:flex-col gap-2 justify-between md:justify-center items-center">
+            <div className="py-[10px] md:px-[20px] md:py-[0px] border-b-2 border-t-2 md:border-b-0 md:border-t-0 border-l-0 md:border-l-2 border-r-0 md:border-r-2 border-[##E4E5E8] flex md:flex-col gap-2 justify-between md:justify-center items-center">
               <p className="flex gap-1 text-[#62666E] text-center px-4 text-[14px] font-rubik font-normal">
                 <img
                   className="w-[20px] h-[20px]"

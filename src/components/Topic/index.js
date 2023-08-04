@@ -12,7 +12,6 @@ const Topic = ({ topic }) => {
     setTasks(TASKS?.filter((task) => task?.topicId === topic?.id));
   }, [topic?.id]);
 
-
   return (
     <div className="mx-auto max-w-screen-sm md:max-w-screen-md">
       <div className="rounded-[12px] grid-cols-2 md:grid-cols-2 flex flex-wrap justify-center md:justify-between items-center bg-white px-[26px] py-[30px]">
@@ -55,7 +54,10 @@ const Topic = ({ topic }) => {
             (ques) => ques?.taskId === item?.id
           )?.length;
           return (
-            <div key={item?.id} className="rounded-[12px] grid-cols-1 md:grid-cols-2 flex justify-between items-center bg-white h-[100px] w-full px-[26px] py-[36px]">
+            <div
+              key={item?.id}
+              className="rounded-[12px] grid-cols-1 md:grid-cols-2 flex justify-between items-center bg-white h-[100px] w-full px-[26px] py-[36px]"
+            >
               <div className="flex gap-[28px] items-center">
                 {item?.taken && (
                   <div

@@ -219,7 +219,7 @@ const QUESTIONS = [
       "To ensure fair competition",
       "To protect consumers",
       "To maintain market stability",
-      "To promote economic growth"
+      "To promote economic growth",
     ],
     answer: "To ensure fair competition",
   },
@@ -231,7 +231,7 @@ const QUESTIONS = [
       "Economic regulation",
       "Social regulation",
       "Environmental regulation",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -243,7 +243,7 @@ const QUESTIONS = [
       "FDA (Food and Drug Administration)",
       "FCC (Federal Communications Commission)",
       "SEC (Securities and Exchange Commission)",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -255,7 +255,7 @@ const QUESTIONS = [
       "To ensure adherence to laws and regulations",
       "To maximize profits",
       "To create new regulations",
-      "To increase competition"
+      "To increase competition",
     ],
     answer: "To ensure adherence to laws and regulations",
   },
@@ -267,7 +267,7 @@ const QUESTIONS = [
       "The process of reducing or eliminating government regulations",
       "The process of creating more regulations",
       "The process of international regulation",
-      "The process of regulating technology companies"
+      "The process of regulating technology companies",
     ],
     answer: "The process of reducing or eliminating government regulations",
   },
@@ -279,7 +279,7 @@ const QUESTIONS = [
       "Consumer protection",
       "Stability in financial markets",
       "Environmental protection",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -291,7 +291,7 @@ const QUESTIONS = [
       "Increased compliance costs",
       "Reduced innovation",
       "Slower economic growth",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -303,7 +303,7 @@ const QUESTIONS = [
       "Regulation of monopolies and unfair business practices",
       "Regulation of international trade",
       "Regulation of social media platforms",
-      "Regulation of healthcare"
+      "Regulation of healthcare",
     ],
     answer: "Regulation of monopolies and unfair business practices",
   },
@@ -315,7 +315,7 @@ const QUESTIONS = [
       "Restricting certain financial activities",
       "Promoting transparency and disclosure",
       "Ensuring fair lending practices",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -327,7 +327,7 @@ const QUESTIONS = [
       "Ensuring patient safety",
       "Controlling healthcare costs",
       "Regulating medical research",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -339,7 +339,7 @@ const QUESTIONS = [
       "Requiring companies to protect user data",
       "Limiting data collection and usage",
       "Ensuring user consent for data processing",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -351,7 +351,7 @@ const QUESTIONS = [
       "Regulation of environmental pollution",
       "Regulation of energy sources",
       "Regulation of social media content",
-      "Regulation of immigration"
+      "Regulation of immigration",
     ],
     answer: "Regulation of environmental pollution",
   },
@@ -363,7 +363,7 @@ const QUESTIONS = [
       "Regulating data privacy",
       "Promoting competition among tech companies",
       "Addressing cybersecurity concerns",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -375,7 +375,7 @@ const QUESTIONS = [
       "Differing legal systems and standards",
       "Enforcement across borders",
       "Language and cultural barriers",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -387,7 +387,7 @@ const QUESTIONS = [
       "Ensuring food safety",
       "Labeling requirements",
       "Controlling food additives",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -399,19 +399,20 @@ const QUESTIONS = [
       "Promoting renewable energy sources",
       "Setting emission standards",
       "Regulating energy pricing",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
   {
     id: 37,
     taskId: 4,
-    question: "What is the role of financial regulations in preventing economic crises?",
+    question:
+      "What is the role of financial regulations in preventing economic crises?",
     options: [
       "Strengthening bank capital requirements",
       "Regulating risky financial products",
       "Enhancing market transparency",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -423,7 +424,7 @@ const QUESTIONS = [
       "Increasing compliance costs",
       "Providing financial incentives",
       "Promoting fair competition",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -435,7 +436,7 @@ const QUESTIONS = [
       "Protecting workers from hazards",
       "Promoting work-life balance",
       "Regulating job salaries",
-      "All of the above"
+      "All of the above",
     ],
     answer: "Protecting workers from hazards",
   },
@@ -447,7 +448,7 @@ const QUESTIONS = [
       "Ensuring universal access to communication services",
       "Regulating internet service providers",
       "Setting standards for communication devices",
-      "All of the above"
+      "All of the above",
     ],
     answer: "All of the above",
   },
@@ -459,20 +460,16 @@ const QUESTIONS = [
       "To house the cockpit",
       "To carry passengers and cargo",
       "To generate thrust",
-      "To store fuel"
+      "To store fuel",
     ],
     answer: "To carry passengers and cargo",
   },
   {
     id: 42,
     taskId: 5,
-    question: "Which component of the aircraft is responsible for generating lift?",
-    options: [
-      "Wings",
-      "Tail",
-      "Fuselage",
-      "Landing gear"
-    ],
+    question:
+      "Which component of the aircraft is responsible for generating lift?",
+    options: ["Wings", "Tail", "Fuselage", "Landing gear"],
     answer: "Wings",
   },
   {
@@ -483,7 +480,7 @@ const QUESTIONS = [
       "To stabilize the aircraft during flight",
       "To assist in takeoff and landing",
       "To communicate with air traffic control",
-      "To navigate using GPS"
+      "To navigate using GPS",
     ],
     answer: "To assist in takeoff and landing",
   },
@@ -491,12 +488,7 @@ const QUESTIONS = [
     id: 44,
     taskId: 5,
     question: "Which type of aircraft propulsion system uses a jet engine?",
-    options: [
-      "Propeller",
-      "Turbofan",
-      "Turboprop",
-      "Ramjet"
-    ],
+    options: ["Propeller", "Turbofan", "Turboprop", "Ramjet"],
     answer: "Turbofan",
   },
   {
@@ -507,7 +499,7 @@ const QUESTIONS = [
       "To control the engines",
       "To manage the flight controls",
       "To monitor weather conditions",
-      "To manage communication and navigation"
+      "To manage communication and navigation",
     ],
     answer: "To manage communication and navigation",
   },
@@ -519,20 +511,16 @@ const QUESTIONS = [
       "To store food and supplies for the crew",
       "To record flight data and cockpit conversations",
       "To control the aircraft during emergencies",
-      "To provide entertainment to passengers"
+      "To provide entertainment to passengers",
     ],
     answer: "To record flight data and cockpit conversations",
   },
   {
     id: 47,
     taskId: 6,
-    question: "Which part of the aircraft is responsible for controlling pitch and roll?",
-    options: [
-      "Elevator",
-      "Rudder",
-      "Ailerons",
-      "Flaps"
-    ],
+    question:
+      "Which part of the aircraft is responsible for controlling pitch and roll?",
+    options: ["Elevator", "Rudder", "Ailerons", "Flaps"],
     answer: "Ailerons",
   },
   {
@@ -543,7 +531,7 @@ const QUESTIONS = [
       "To reduce drag during landing",
       "To increase fuel efficiency",
       "To reverse the direction of engine thrust",
-      "To provide extra lift"
+      "To provide extra lift",
     ],
     answer: "To reverse the direction of engine thrust",
   },
@@ -555,24 +543,24 @@ const QUESTIONS = [
       "Pilots control the aircraft using mechanical linkages",
       "Pilots use a joystick to fly the aircraft",
       "Aircraft is controlled electronically without direct mechanical connections",
-      "Aircraft navigation is automated"
+      "Aircraft navigation is automated",
     ],
-    answer: "Aircraft is controlled electronically without direct mechanical connections",
+    answer:
+      "Aircraft is controlled electronically without direct mechanical connections",
   },
   {
     id: 50,
     taskId: 6,
-    question: "Which aircraft system is responsible for pressurizing the cabin?",
+    question:
+      "Which aircraft system is responsible for pressurizing the cabin?",
     options: [
       "Hydraulic system",
       "Fuel system",
       "Pneumatic system",
-      "Air conditioning system"
+      "Air conditioning system",
     ],
     answer: "Air conditioning system",
   },
-
-
 ];
 
 export default QUESTIONS;

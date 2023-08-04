@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressBar from "../ProgressBar";
+import ProgressBar from "./ProgressBar";
 import TOPICS_PERFORMANCE from "@/data/topicsPerformance";
 import TOPICS from "@/data/topics";
 import Topic from "./topic";
