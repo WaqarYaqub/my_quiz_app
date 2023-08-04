@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import TASKS from "@/data/task";
 import QuizHeader from "@/components/Quiz/QuizHeader";
-import { getLevel } from "@/utils";
 
 const QuizCompleted = ({ result, taskId }) => {
   const [report, setReport] = useState({ total: 0, correct: 0, wrong: 0 });
@@ -16,6 +15,7 @@ const QuizCompleted = ({ result, taskId }) => {
     });
     setCurrentTask(TASKS?.find((item) => item?.id === taskId));
   }, [result]);
+  const percentage = (report?.correct / report?.total) * 100;
 
   return (
     <>
@@ -37,12 +37,18 @@ const QuizCompleted = ({ result, taskId }) => {
 
               <div class="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4">
                 <p className="text-[#16191F] text-center text-[40px] font-rubik font-bold">
-                  {`${(report?.correct / report?.total) * 100} %`}
+                  {`${percentage} %`}
                 </p>
               </div>
             </div>
             <p className="text-[#484C54] text-center px-4 text-[16px] font-rubik font-normal">
-              {"Congratulation! You become an Expert"}
+              {`Congratulation! You become an ${
+                percentage <= 40
+                  ? "Beginner"
+                  : percentage <= 80
+                  ? "Intermediate"
+                  : "Expert"
+              }`}
             </p>
           </div>
           <div className="mx-[20px] w-full md:w-auto p-[10px] md:p-[20px] rounded-[20px] border-[1px] border-[#E4E5E8] gap-[20px] grid grid-cols-1 md:grid-cols-3 flex items-center justify-between">
